@@ -1,0 +1,31 @@
+name: manual init
+
+on:
+  workflow_dispatch:
+
+jobs:
+  init:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Setup the whole thing
+        run: |
+          npm create vite@latest redoff_site --template react \
+          cd redoff_site \
+          npm install \
+          npm install -D tailwindcss postcss autoprefixer \
+          npx tailwindcss init -p
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          path: redoff_site/
+          if-no-files-found: error
+          retention-days: 1
