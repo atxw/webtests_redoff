@@ -20,15 +20,13 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        working-directory: ./redoff_site
         run: npm install
 
       - name: Build
-        working-directory: ./redoff_site
         run: npm run build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./redoff_site/dist
+          publish_dir: ./dist
