@@ -17,7 +17,7 @@ jobs:
 
       - name: Setup the whole thing
         run: |
-          npm create vite@latest redoff_site --template react \
+          npm create -y vite@latest redoff_site -- --template react \
           cd redoff_site \
           npm install \
           npm install -D tailwindcss postcss autoprefixer \
