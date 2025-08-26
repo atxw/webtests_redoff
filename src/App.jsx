@@ -1,7 +1,4 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from 'react';
 
 const quotes = [
   "The best way to get started is to quit talking and begin doing.",
@@ -12,40 +9,26 @@ const quotes = [
 ];
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [count, setCount] = useState(0);
   const [quote, setQuote] = useState(quotes[0]);
 
   function getRandomQuote() {
     const randomIndex = Math.floor(Math.random() * quotes.length);
     setQuote(quotes[randomIndex]);
   }
-  
+
   return (
-    <>
+    <div style={{ padding: '2rem', fontFamily: 'sans-serif' }}>
+      <h1>Welcome to webtests_redoff!</h1>
+      <p>This is a simple example React component.</p>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+        <button onClick={() => setCount(count + 1)}>
+          You clicked {count} times
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-      
-      <div style={{ padding: '2rem', fontFamily: 'sans-serif' }}>
-        <h1>Random Quote Generator</h1>
+      {/* Random Quote Generator Section */}
+      <div style={{ marginTop: '2rem' }}>
+        <h2>Random Quote Generator</h2>
         <blockquote style={{ fontStyle: 'italic', color: '#555' }}>
           "{quote}"
         </blockquote>
@@ -53,8 +36,8 @@ function App() {
           Show another quote
         </button>
       </div>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
