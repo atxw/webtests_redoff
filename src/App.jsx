@@ -39,14 +39,34 @@ function App() {
           </p>
         </section>
 
-        <section className="services">
-          <h2>Our Services</h2>
-          <ul>
-            <li>Red-Themed Web Design</li>
-            <li>Custom Software Development</li>
-            <li>Branding & Identity</li>
-            <li>Digital Marketing</li>
-          </ul>
+        <section className="features">
+          <h2>Our Features & Services</h2>
+          <div className="cards">
+            <div className="card">
+              <h3>Red-Themed Web Design</h3>
+              <p>We create stunning, responsive websites with a bold red touch that captures attention and drives engagement.</p>
+            </div>
+            <div className="card">
+              <h3>Custom Software Development</h3>
+              <p>Tailored software solutions designed to meet your unique business needs, with a focus on performance and style.</p>
+            </div>
+            <div className="card">
+              <h3>Branding & Identity</h3>
+              <p>Build a memorable brand with our expert design team, ensuring your identity is as bold as your vision.</p>
+            </div>
+            <div className="card">
+              <h3>Digital Marketing</h3>
+              <p>Boost your online presence with targeted campaigns and strategies that deliver real results.</p>
+            </div>
+            <div className="card">
+              <h3>E-Commerce Solutions</h3>
+              <p>Launch or upgrade your online store with our seamless, user-friendly e-commerce platforms.</p>
+            </div>
+            <div className="card">
+              <h3>Mobile App Development</h3>
+              <p>Reach your audience on the go with custom mobile apps that are fast, intuitive, and visually striking.</p>
+            </div>
+          </div>
         </section>
 
         <section className="contact">
