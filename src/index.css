@@ -54,6 +54,47 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.features {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.features h2 {
+  color: #ff6b6b;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  color: #ff6b6b;
+  margin-bottom: 0.75rem;
+}
+
+.card p {
+  color: #666;
+  line-height: 1.5;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
