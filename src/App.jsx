@@ -69,6 +69,28 @@ function App() {
           </div>
         </section>
 
+        <section className="features">
+          <h2>Our Values</h2>
+          <div className="cards">
+            <div className="card">
+              <h3>Innovation</h3>
+              <p>We constantly seek out new ideas and creative solutions to stay ahead in the industry and provide unique value to our clients.</p>
+            </div>
+            <div className="card">
+              <h3>Integrity</h3>
+              <p>We conduct our business with honesty and transparency, building trust with our clients and partners.</p>
+            </div>
+            <div className="card">
+              <h3>Collaboration</h3>
+              <p>We believe teamwork and open communication drive the best results, both within our company and with our clients.</p>
+            </div>
+            <div className="card">
+              <h3>Excellence</h3>
+              <p>We are committed to delivering the highest quality in everything we do, from our services to our customer support.</p>
+            </div>
+          </div>
+        </section>
+
         <section className="contact">
           <h2>Contact Us</h2>
           <form onSubmit={handleSubmit}>
