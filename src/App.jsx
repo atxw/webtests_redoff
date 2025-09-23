@@ -23,7 +23,7 @@ function App() {
   };
 
   return (
-    <>
+    <div className="container">
       <header className="hero">
         <h1>Welcome to Redoff</h1>
         <p>Innovating the future, one red solution at a time.</p>
@@ -112,7 +112,7 @@ function App() {
       <footer>
         <p>&copy; {new Date().getFullYear()} Redoff. All rights reserved.</p>
       </footer>
-    </>
+    </div>
   );
 }
 
